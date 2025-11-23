@@ -15,7 +15,7 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(Catch2)
 
-add_executable(hello_test tests/hello_test.cpp src/hello.cpp)
-add_executable(main main.cpp src/hello.cpp)
+add_executable(triangle_number_calculator_test tests/triangle_number_calculator_test.cpp src/triangle_number_calculator.cpp)
+add_executable(main main.cpp src/triangle_number_calculator.cpp)
 
-target_link_libraries(hello_test PRIVATE Catch2::Catch2WithMain)
+target_link_libraries(triangle_number_calculator_test PRIVATE Catch2::Catch2WithMain)
